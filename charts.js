@@ -1,3 +1,28 @@
+Highcharts.setOptions({
+  chart: {
+      style: {
+          fontFamily: 'D-DIN Regular',
+          color: "#F5F5F5"
+      },
+      backgroundColor: "#152238"
+
+  },
+  title: {
+    style: {
+       color: '#F5F5F5',
+       font: 'bold 16px D-DIN Regular'
+    }
+  },
+  plotOptions: {
+    pie: {
+      dataLabels: {
+        color: "F5F5F5",
+        style: { fontFamily: '\'D-DIN Regular\'', textShadow: false, textOutline: false }
+      }
+    }
+  },
+})
+
 Highcharts.chart('nft_distribution_chart', {
     credits: {
         enabled: false
@@ -6,7 +31,7 @@ Highcharts.chart('nft_distribution_chart', {
       plotBackgroundColor: null,
       plotBorderWidth: null,
       plotShadow: false,
-      type: 'pie',
+      type: 'pie'
     },
     title: {
       text: 'Distribution of 10,000 Unique The Bear Necessities NFTs'
@@ -18,11 +43,7 @@ Highcharts.chart('nft_distribution_chart', {
       pie: {
         allowPointSelect: true,
         showInLegend: false,
-        cursor: 'pointer',
-        dataLabels: {
-          enabled: true,
-          format: '<b>{point.name}</b>: {point.y}'
-        }
+        cursor: 'pointer'
       }
     },
     series: [{
@@ -54,7 +75,8 @@ Highcharts.chart('nft_distribution_chart', {
       plotBackgroundColor: null,
       plotBorderWidth: null,
       plotShadow: false,
-      type: 'pie'
+      type: 'pie',
+      
     },
     title: {
       text: 'Distribution of Proceeds'
@@ -90,3 +112,5 @@ Highcharts.chart('nft_distribution_chart', {
       }]
     }]
   });
+
+  

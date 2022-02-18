@@ -9,3 +9,7 @@ html * {
     font-style: normal;
     font-weight: normal;
 }
+body {
+	background-color: #152238;
+	color:  #F5F5F5;
+}
